@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEURA - Smart Academic AI</title>
+    <title> UsamaGPT - Smart Academic AI</title>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -533,7 +533,7 @@
             <div class="logo-icon">
                 <i class="fas fa-brain" style="color: white; font-size: 20px;"></i>
             </div>
-            <h1 class="logo-text">NEURA</h1>
+            <h1 class="logo-text">UsamaGPT</h1>
         </div>
 
         <div class="nav-section">
@@ -565,7 +565,7 @@
         </div>
 
         <div style="margin-top: auto; padding-top: 20px; font-size: 11px; color: var(--text-muted); opacity: 0.5;">
-            NEURA v2.4.0-STABLE<br>
+            UsamaGPT.0-STABLE<br>
             Powered by Groq Intelligence
         </div>
     </aside>
@@ -595,7 +595,7 @@
             <!-- Starting Message -->
             <div class="message bot">
                 <div class="bubble">
-                    Greetings. I am NEURA, your intelligent academic assistant. How can I facilitate your university experience today?
+                    Greetings. I am UsamaGPT, your intelligent academic assistant. How can I facilitate your university experience today?
                 </div>
                 <span class="message-time">Just now</span>
             </div>
@@ -613,7 +613,7 @@
                     <i class="fas fa-microphone"></i>
                 </button>
                 <form id="textForm" style="flex: 1; display: flex;">
-                    <input type="text" class="text-input" id="textInput" placeholder="Message NEURA..." autocomplete="off">
+                    <input type="text" class="text-input" id="textInput" placeholder="Message UsamaGPT..." autocomplete="off">
                 </form>
                 <button class="action-btn send" id="sendBtn">
                     <i class="fas fa-arrow-up"></i>
@@ -682,7 +682,7 @@
 <div class="widget-content" id="widget-team">
     <div class="team-grid">
         <div class="team-card">
-            <div class="team-name">Aryan Rahim</div>
+            <div class="team-name">Usama Ahmad </div>
             <div class="team-role">Founder, Creator & Developer</div>
         </div>
     </div>
@@ -791,7 +791,7 @@
             messageDiv.className = `message ${side}`;
             messageDiv.innerHTML = `
                 <div class="bubble">${text}</div>
-                <span class="message-time">${side === 'bot' ? 'NEURA • ' : ''}${time}</span>
+                <span class="message-time">${side === 'bot' ? 'UsamaGPT • ' : ''}${time}</span>
             `;
             chatContainer.appendChild(messageDiv);
             chatContainer.scrollTop = chatContainer.scrollHeight;
@@ -830,7 +830,7 @@
 
             } catch (error) {
                 typingIndicator.style.display = 'none';
-                addMessage("I'm having trouble connecting to the neural network.", 'bot');
+                addMessage("I'm having trouble connecting to the UsamaGPT network.", 'bot');
                 updateStatus('ERROR', '#ef4444');
             }
         }

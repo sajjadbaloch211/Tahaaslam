@@ -4,7 +4,7 @@ from chatbot import ChatBot
 
 # Page Config
 st.set_page_config(
-    page_title="NEURA v2.4 | Iqra University AI",
+    page_title="UsamaGPT| Iqra University AI",
     page_icon="🤖",
     layout="centered"
 )
@@ -45,7 +45,7 @@ if "bot" not in st.session_state:
 # Initialize Chat History
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Greetings. I am NEURA v2.4, created by Aryan Rahim . How can I assist you with Iqra University information today?"}
+        {"role": "assistant", "content": "Greetings. I am UsamaGPT, created by Usama Ahmad . How can I assist you with Iqra University information today?"}
     ]
 
 # Header
@@ -71,7 +71,7 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
         
         try:
             # Show thinking pulse
-            with st.spinner("Analyzing neural link..."):
+            with st.spinner("Analyzing UsamaGPT..."):
                 raw_response = st.session_state.bot.get_response(prompt)
                 
             # Clean response from internal widgets if any
@@ -85,7 +85,7 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
             
             message_placeholder.markdown(full_response)
         except Exception as e:
-            st.error(f"Neural Link Failure: {str(e)}")
+            st.error(f"UsamaGPT Link Failure: {str(e)}")
             full_response = "I encountered a synchronization error. Please try again."
 
     # Add Bot Message to History
@@ -95,10 +95,10 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
 with st.sidebar:
     st.image("https://iqra.edu.pk/wp-content/uploads/2021/04/iqra-logo.png", width=150)
     st.markdown("---")
-    st.write("### About NEURA")
-    st.info("NEURA v2.4 is a highly advanced conversational AI designed specifically for Iqra University students and faculty.")
+    st.write("### About UsamaGPT")
+    st.info("UsamaGPT  is a highly advanced conversational AI designed specifically for Iqra University students and faculty.")
     st.write("**Developed by:**")
-    st.success("Aryan Rahim")
+    st.success("Usama Ahmad ")
     st.markdown("---")
     if st.button("Clear Chat History"):
         st.session_state.messages = []
