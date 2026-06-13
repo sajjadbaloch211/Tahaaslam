@@ -1,0 +1,11 @@
+flask
+streamlit
+openai
+python-dotenv
+faiss-cpu
+sentence-transformers
+numpy
+langchain-text-splitters
+nltk
+tqdm
+google-generativeai
