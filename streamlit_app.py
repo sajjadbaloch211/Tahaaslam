@@ -45,7 +45,7 @@ if "bot" not in st.session_state:
 # Initialize Chat History
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Greetings. I am Tuha Aslam, created by Tuha Aslam . How can I assist you with Iqra University information today?"}
+        {"role": "assistant", "content": "Greetings. I am TuhaGPT, created by Tuha Aslam . How can I assist you with Iqra University information today?"}
     ]
 
 # Header
@@ -71,7 +71,7 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
         
         try:
             # Show thinking pulse
-            with st.spinner("Analyzing UsamaGPT..."):
+            with st.spinner("Analyzing TuhaGPT..."):
                 raw_response = st.session_state.bot.get_response(prompt)
                 
             # Clean response from internal widgets if any
@@ -85,7 +85,7 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
             
             message_placeholder.markdown(full_response)
         except Exception as e:
-            st.error(f"UsamaGPT Link Failure: {str(e)}")
+            st.error(f"TuhaGPT Link Failure: {str(e)}")
             full_response = "I encountered a synchronization error. Please try again."
 
     # Add Bot Message to History
@@ -95,10 +95,10 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
 with st.sidebar:
     st.image("https://iqra.edu.pk/wp-content/uploads/2021/04/iqra-logo.png", width=150)
     st.markdown("---")
-    st.write("### About UsamaGPT")
-    st.info("UsamaGPT  is a highly advanced conversational AI designed specifically for Iqra University students and faculty.")
-    st.write("**Developed by:**")
-    st.success("Usama Ahmad ")
+    st.write("### About TuhaGPT")
+    st.info("TuhaGPT  is a highly advanced conversational AI designed specifically for Iqra University students and faculty.")
+    st.write("**Developed by:* Tuha Aslam *")
+    st.success("Taha Aslam ")
     st.markdown("---")
     if st.button("Clear Chat History"):
         st.session_state.messages = []
