@@ -4,7 +4,7 @@ from chatbot import ChatBot
 
 # Page Config
 st.set_page_config(
-    page_title="UsamaGPT| Iqra University AI",
+    page_title="TuhaGPT| Iqra University AI",
     page_icon="🤖",
     layout="centered"
 )
@@ -45,7 +45,7 @@ if "bot" not in st.session_state:
 # Initialize Chat History
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Greetings. I am UsamaGPT, created by Usama Ahmad . How can I assist you with Iqra University information today?"}
+        {"role": "assistant", "content": "Greetings. I am Tuha Aslam, created by Tuha Aslam . How can I assist you with Iqra University information today?"}
     ]
 
 # Header
