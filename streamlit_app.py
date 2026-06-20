@@ -4,7 +4,7 @@ from chatbot import ChatBot
 
 # Page Config
 st.set_page_config(
-    page_title="TuhaGPT| Iqra University AI",
+    page_title="Fahadgpt 5.5 | Iqra University AI",
     page_icon="🤖",
     layout="centered"
 )
@@ -45,7 +45,7 @@ if "bot" not in st.session_state:
 # Initialize Chat History
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Greetings. I am TuhaGPT, created by Tuha Aslam . How can I assist you with Iqra University information today?"}
+        {"role": "assistant", "content": "Greetings. I am Fahadgpt 5.5 , created by FahadGPT . How can I assist you with Iqra University information today?"}
     ]
 
 # Header
@@ -71,7 +71,7 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
         
         try:
             # Show thinking pulse
-            with st.spinner("Analyzing TuhaGPT..."):
+            with st.spinner("Analyzing\ Fahadgpt 5.5 ..."):
                 raw_response = st.session_state.bot.get_response(prompt)
                 
             # Clean response from internal widgets if any
@@ -85,7 +85,7 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
             
             message_placeholder.markdown(full_response)
         except Exception as e:
-            st.error(f"TuhaGPT Link Failure: {str(e)}")
+            st.error(f"Fahadgpt 5.5  Link Failure: {str(e)}")
             full_response = "I encountered a synchronization error. Please try again."
 
     # Add Bot Message to History
@@ -95,9 +95,9 @@ if prompt := st.chat_input("Ask about Fees, Attendance, or Faculty..."):
 with st.sidebar:
     st.image("https://iqra.edu.pk/wp-content/uploads/2021/04/iqra-logo.png", width=150)
     st.markdown("---")
-    st.write("### About TuhaGPT")
-    st.info("TuhaGPT  is a highly advanced conversational AI designed specifically for Iqra University students and faculty.")
-    st.write("**Developed by:* Tuha Aslam *")
+    st.write("### About Fahadgpt 5.5 ")
+    st.info("Fahadgpt 5.5   is a highly advanced conversational AI designed specifically for Iqra University students and faculty.")
+    st.write("**Developed by:* Fahad *")
     st.success("Taha Aslam ")
     st.markdown("---")
     if st.button("Clear Chat History"):

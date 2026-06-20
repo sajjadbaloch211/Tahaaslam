@@ -1,7 +1,7 @@
 """
-NEURA v2.4 - Advanced NLP Engine
+Fahadgpt 5.5 - Advanced NLP Engine
 Enhanced Natural Language Processing Module
-Created by:  Aryan Rahim 
+Created by:  Fahad
 """
 
 import re
@@ -383,7 +383,7 @@ if __name__ == "__main__":
     ]
     
     print("=" * 80)
-    print("NEURA v2.4 - Advanced NLP Engine Test")
+    print("Fahadgpt 5.5  - Advanced NLP Engine Test")
     print("=" * 80)
     
     for query in test_queries:

@@ -51,7 +51,7 @@ class ChatBot:
                 "creator", "developer", "designer", "makers", "developers",
                 "kis ne banaya", "kisne banaya", "tumhe kisne banaya", "owner"
             ]):
-                return "I was created by Aryan Rahim of Iqra University to serve as a conversational AI assistant for students."
+                return "I was created by Fahad of Iqra University to serve as a conversational AI assistant for students."
 
             # 1. RETRIEVE context from knowledge base (RAG)
             search_k = 5
@@ -76,7 +76,7 @@ class ChatBot:
             # 2. CALL GROQ API via requests
             url = "https://api.groq.com/openai/v1/chat/completions"
             
-            system_prompt = f"""You are NEURA v2.4, an ultra-intelligent and helpful AI assistant for Iqra University. 
+            system_prompt = f"""You are Fahad , an ultra-intelligent and helpful AI assistant for Iqra University. 
 Your goal is to behave like ChatGPT but with specialized knowledge of Iqra University.
 
 GUIDELINES:
